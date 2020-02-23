@@ -27,7 +27,8 @@
         <activity
             android:name=".user.views.LoginActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".movies.views.MainActivity" />
+        <activity android:name=".movies.views.MainActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.sanushradalage.cinema.movies.views
 
 import android.content.Intent
+import android.graphics.Rect
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.sanushradalage.cinema.R
 import com.sanushradalage.cinema.movies.models.MovieDBClient
 import com.sanushradalage.cinema.movies.models.MovieDBInterface
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         val gridLayoutManager = GridLayoutManager(this, 2)
 
+
         gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
             override fun getSpanSize(position: Int): Int {
                 val viewType = movieAdapter.getItemViewType(position)
@@ -62,6 +65,7 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
+
 
     private fun getViewModel(): MoviesViewModel
     {

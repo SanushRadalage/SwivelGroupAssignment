@@ -25,14 +25,12 @@ class MoviePagedListAdapter(public val context: Context) : PagedListAdapter<Sear
         val layoutInflater = LayoutInflater.from(parent.context)
         val view: View
 
-        if(viewType == MOVIE_VIEW_TYPE)
-        {
+        return if(viewType == MOVIE_VIEW_TYPE) {
             view = layoutInflater.inflate(R.layout.card_view, parent, false)
-            return MovieItemViewHolder(view)
-        }
-        else {
+            MovieItemViewHolder(view)
+        } else {
             view = layoutInflater.inflate(R.layout.network_state_layout, parent, false)
-            return NetworkStateItemViewHolder(view)
+            NetworkStateItemViewHolder(view)
         }
     }
 
