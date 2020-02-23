@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cinema</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="button_text">Login</string>
+    <string name="year">2020</string>
+    <string name="title">Title</string>
+    <string name="name">Sanush Radalage</string>
+    <string name="email">maleekasanush@gmail.com</string>
+    <string name="welcome_text">Welcome to Cinema</string>
+    <string name="List_text">BatMan Movies Collection</string>
+    <string name="connection_error">Connection Problem!!</string>
+</resources>
